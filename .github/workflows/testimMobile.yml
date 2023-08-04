@@ -1,0 +1,13 @@
+name: Testim E2E
+on: [push]
+
+jobs:
+    run-testimio-cli:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@v2
+              with:
+                node-version: '16.13.0'
+            - run: npm install -g @testim/testim-cli
+            - run: testim --token "Q9Yj6GAz9BleB5zzJVdyxAsDKj8KvOkeSmjikCOc3XWH9l0hnC" --project "me4KI7WmeifC9r3EVn4f" --grid "tricentis-device-cloud" --name "end-to-end flow" --test-config "TDC - OS greater than 13"
