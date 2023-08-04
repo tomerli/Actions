@@ -1,4 +1,4 @@
-name: Testim E2E
+name: Testim Mobile
 on: [push]
 
 jobs:
