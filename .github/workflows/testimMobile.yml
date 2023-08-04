@@ -10,4 +10,4 @@ jobs:
               with:
                 node-version: '16.13.0'
             - run: npm install -g @testim/testim-cli
-            - run: testim --token "Q9Yj6GAz9BleB5zzJVdyxAsDKj8KvOkeSmjikCOc3XWH9l0hnC" --project "me4KI7WmeifC9r3EVn4f" --grid "tricentis-device-cloud" --name "end-to-end flow" --test-config "TDC - OS greater than 13"
+            - run: testim --token "Q9Yj6GAz9BleB5zzJVdyxAsDKj8KvOkeSmjikCOc3XWH9l0hnC" --project "me4KI7WmeifC9r3EVn4f" --grid "tricentis-device-cloud" --name "end-to-end flow" --mode "appium" --test-config "TDC - OS greater than 13"
